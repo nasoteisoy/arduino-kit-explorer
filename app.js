@@ -249,3 +249,4 @@ document.querySelectorAll("[data-cel]").forEach(b => b.onclick = celebrate);
 
 // Open a project from the URL hash
 if (location.hash) { const d = document.querySelector(location.hash); if (d && d.tagName === "DETAILS") d.open = true; }
+window.addEventListener("hashchange", () => { const d = document.querySelector(location.hash); if (d && d.tagName === "DETAILS") d.open = true; });
