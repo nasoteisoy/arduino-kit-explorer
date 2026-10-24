@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🤖 Arduino Kit Explorer</title>
+<meta name="description" content="Picture-first Arduino starter kit projects for Chumi and kid.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-emoji">🤖⚡💡</div>
+  <h1>Arduino Kit Explorer</h1>
+  <p class="sub">Chumi + kid 🧒 build lab</p>
+  <nav class="tabs">
+    <a href="#parts" class="tab">🧩<span>Parts</span></a>
+    <a href="#projects" class="tab">🛠️<span>Build</span></a>
+    <a href="#code" class="tab">💻<span>Code</span></a>
+    <a href="#finds" class="tab">✨<span>Cool</span></a>
+  </nav>
+</header>
+
+<section class="safety" aria-label="Safety">
+  <div class="safe">🔌❌ <span>Unplug before changing wires</span></div>
+  <div class="safe">💡➡️ <span>LEDs only work one way</span></div>
+  <div class="safe">🌀✋ <span>Fingers &amp; hair away from the fan</span></div>
+</section>
+
+<main>
+  <section id="parts">
+    <h2>🧩 Parts</h2>
+    <p class="note">🔋 #33 + 9V = go now! &nbsp; 🔌 #32 lost 😢</p>
+    <div id="parts-grid" class="grid"></div>
+  </section>
+
+  <section id="projects">
+    <h2>🛠️ Build (no code!)</h2>
+    <div id="project-list"></div>
+  </section>
+
+  <section id="code">
+    <h2>💻 Needs #32 (code)</h2>
+    <p class="note">🔌 Find a USB cable first!</p>
+    <div id="code-list"></div>
+  </section>
+
+  <section id="finds">
+    <h2>✨ Cool finds</h2>
+    <div class="finds">
+      <a class="find" href="https://www.schematik.io/" target="_blank" rel="noopener">
+        <div class="find-emoji">🗣️➡️🔌</div>
+        <h3>Schematik</h3>
+        <p>Say your idea in plain words → AI gives Arduino code, wiring, parts list &amp; steps.</p>
+        <p class="tiny">Reel used a PIR motion sensor (not in kit) → try #5 ultrasonic 🦇</p>
+      </a>
+      <a class="find" href="https://learn-arduino-red.vercel.app" target="_blank" rel="noopener">
+        <div class="find-emoji">🧊🔄🤖</div>
+        <h3>Learn Arduino 3D</h3>
+        <p>Spin a 3D Uno and tap its parts. Great with P1!</p>
+        <p class="tiny">from @bytes.hq</p>
+      </a>
+      <div class="find someday">
+        <div class="find-emoji">🟩🔧🌟</div>
+        <h3>Make our own circuit board</h3>
+        <p>Someday idea! A reel showed an AI tool for designing custom boards (probably flux.ai).</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>Made for Chumi 💛 · REXQualis Uno kit</footer>
+
+<dialog id="part-dialog">
+  <button class="close" aria-label="Close">✖</button>
+  <div id="part-body"></div>
+</dialog>
+
+<div id="confetti" aria-hidden="true"></div>
+<script src="app.js"></script>
+</body>
+</html>
